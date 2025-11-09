@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto Blog</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script type="module" src="./js/index.js" defer></script>
+        
+        
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <div class="c-nav c-container">
+                <a href="#" class="c-logo">lo<span>GO</span></a>
+                <a href="#" class="c-login" data-button="login">Login</a>
+            </div>
+        </header>
+
+        <!-- logo -->
+        <section class="c-home" id="id-home">
+            <div class="c-home-text c-container">
+                <h2 class="c-home-title">Blog</h2>
+            </div>
+        </section>
+
+        <!-- post filter -->
+         <div class="c-post-filter c-container">
+            <span 
+                class="c-filter-item c-active" 
+                data-filter="all-categories"
+            >
+                Todas
+            </span>
+
+            <span 
+                class="c-filter-item" 
+                data-filter="category-1"
+            >
+                Categoria 1
+            </span>
+            <span 
+                class="c-filter-item" 
+                data-filter="category-2"
+            >
+                Categoria 2
+            </span>
+
+            <span 
+                class="c-filter-item" 
+                data-filter="category-3"
+            >
+                Categoria 3
+            </span>
+
+            <span 
+                class="c-filter-item" 
+                data-filter="category-4"
+            >
+                Categoria 4
+            </span>
+         </div>
+
+        <!-- container que abrigara os cards dinamicamente-->
+        <section class="c-post" data-container-cards>
+            <template data-template>
+                <div class="c-post-box" data-category="" data-cards data-id="">
+                    <img class="" src="" alt="" data-card-img />
+
+                    <h2 class="c-category" data-card-category></h2>
+
+                    <p class="c-post-title" data-card-title></p>
+
+                    <span class="c-post-date" data-card-date-time></span>
+
+                    <br />
+
+                    <span class="c-category">
+                        Visualizações: <span data-card-views></span>
+                    </span>
+
+                    <p class="c-post-description" data-card-description></p>
+                </div>
+            </template>
+        </section>
+    </body>
+</html>

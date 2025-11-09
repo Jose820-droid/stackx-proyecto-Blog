@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Descrição do Post</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+        <script type="module" src="../js/post.js" defer></script>
+    </head>
+    <body>
+         <header>
+            <div class="c-nav c-container">
+                <a href="../../index.html" class="c-logo">lo<span>GO</span></a>
+                <a href="#" class="c-login" data-login>Login</a>
+            </div>
+        </header>
+
+        <main data-main-container>
+            <template data-template-post-description>
+                <section data-post>
+                    <div class="c-post-header">
+                        <div class="c-header-content c-post-container" data-post-description>
+                            <a href="../../index.html" class="c-back-home">
+                                HOME
+                            </a>
+
+                            <h1 class="c-header-title" data-post-title>
+                                Título do card
+                            </h1>
+                            
+                            <img src="" alt="" class="c-header-img" data-post-header-img />
+                        </div>
+                    </div>
+
+                    <div class="c-post-content c-post-container" data-post-content>
+                        <h2 class="c-sub-heading" data-post-date-time>
+                            Data
+                        </h2>
+
+                        <span class="c-sub-heading c-category">
+                            Visualizações: <span data-post-views>0</span>
+                        </span>
+
+                        <p class="c-post-text" data-post-text>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iste deleniti ratione eius molestiae obcaecati corporis labore, tempore quia quas, sed sit, vero maiores. Maiores quidem laboriosam eaque nobis. Dolorem!
+                        </p>
+                    </div>
+                </section>
+            </template>
+        </main>
+    </body>
+</html>
